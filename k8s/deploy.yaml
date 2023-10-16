@@ -4,11 +4,11 @@ kind: Deployment
 
 metadata:
 
-  name: todo-deployment
+  name: todoapp-deployment
 
   labels:
 
-    app: todo-app
+    app: todoapp
 
 spec:
 
@@ -18,7 +18,7 @@ spec:
 
     matchLabels:
 
-      app: todo-app
+      app: todoapp
 
   template:
 
@@ -26,7 +26,7 @@ spec:
 
       labels:
 
-        app: todo-app
+        app: todoapp
 
     spec:
 
@@ -34,7 +34,7 @@ spec:
 
       - name: todo-app
 
-        image: trainwithshubham/django-todo:latest
+        image: public.ecr.aws/o0s3r5b6/todoapp:latest
 
         ports:
 

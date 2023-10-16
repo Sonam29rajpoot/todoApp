@@ -12,7 +12,7 @@ spec:
 
   - name: todo-app
 
-    image: trainwithshubham/django-todo:latest
+    image: public.ecr.aws/o0s3r5b6/todoapp:latest
 
     ports:
 
